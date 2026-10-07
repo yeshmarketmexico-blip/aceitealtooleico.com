@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" role="img" aria-labelledby="t">
+  <title id="t">Freidora profesional con aceite de girasol alto oleico y canastilla</title>
+  <defs>
+    <linearGradient id="o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7c948"/><stop offset="1" stop-color="#c98509"/></linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d8a84"/><stop offset=".5" stop-color="#d9d6cf"/><stop offset="1" stop-color="#7d7a74"/></linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="#221e17"/>
+  <g stroke="#f5b70a" stroke-width="2" fill="none" opacity=".35" stroke-linecap="round">
+    <path d="M150 70 q-12 -18 0 -36 q12 -18 0 -30"/><path d="M240 64 q-12 -18 0 -36 q12 -18 0 -30"/><path d="M330 70 q-12 -18 0 -36 q12 -18 0 -30"/>
+  </g>
+  <rect x="70" y="110" width="340" height="190" rx="8" fill="url(#s)"/>
+  <rect x="92" y="126" width="296" height="70" rx="4" fill="#3a352c"/>
+  <rect x="96" y="138" width="288" height="54" rx="3" fill="url(#o)"/>
+  <g fill="#fde7a0" opacity=".8"><circle cx="130" cy="146" r="4"/><circle cx="170" cy="150" r="3"/><circle cx="215" cy="144" r="5"/><circle cx="262" cy="149" r="3"/><circle cx="300" cy="145" r="4"/><circle cx="345" cy="150" r="3"/></g>
+  <!-- canastilla -->
+  <path d="M150 100 h120 v42 h-120z" fill="none" stroke="#e8e4db" stroke-width="4"/>
+  <path d="M170 100v42M190 100v42M210 100v42M230 100v42M250 100v42M150 121h120" stroke="#e8e4db" stroke-width="2"/>
+  <path d="M270 110 l80 -40 h40" stroke="#1a1712" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <g fill="#e8a915"><rect x="160" y="112" width="8" height="26" rx="2"/><rect x="176" y="108" width="8" height="30" rx="2"/><rect x="198" y="114" width="8" height="24" rx="2"/><rect x="220" y="110" width="8" height="28" rx="2"/><rect x="242" y="113" width="8" height="25" rx="2"/></g>
+  <!-- panel y termómetro -->
+  <rect x="110" y="220" width="260" height="56" rx="4" fill="#2b271f"/>
+  <text x="130" y="256" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-size="22" font-weight="600" fill="#f5b70a" letter-spacing="2">TEMP °C</text>
+  <circle cx="330" cy="248" r="16" fill="#3a352c" stroke="#f5b70a" stroke-width="3"/><path d="M330 248 l8 -9" stroke="#f5b70a" stroke-width="3" stroke-linecap="round"/>
+</svg>

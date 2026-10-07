@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+<title>Aceite Girasol Alto Oleico México</title>
+<link>https://aceitealtooleico.com/</link>
+<description>Aceite de girasol alto oleico en bidón de 20 L</description>
+<item>
+  <g:id>ACEITE-GIRASOL-AO-20L</g:id>
+  <g:title>Aceite de Girasol Alto Oleico Bidón 20 L</g:title>
+  <g:description>Aceite comestible puro de girasol alto oleico con refinación completa, en bidón de polietileno de 20 litros. Para freidoras de restaurante, hoteles, comedores y cocinas industriales. Entrega el mismo día en CDMX (pedidos antes de las 3:00 p. m.). Factura CFDI.</g:description>
+  <g:link>https://aceitealtooleico.com/</g:link>
+  <g:image_link>https://aceitealtooleico.com/assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.jpg</g:image_link>
+  <g:additional_image_link>https://aceitealtooleico.com/assets/img/bidon-aceite-girasol-alto-oleico-20-litros.jpg</g:additional_image_link>
+  <g:availability>in_stock</g:availability>
+  <g:price>1699.00 MXN</g:price>
+  <g:condition>new</g:condition>
+  <g:brand>Aceite Girasol Alto Oleico México</g:brand>
+  <g:identifier_exists>no</g:identifier_exists>
+  <g:google_product_category>Food, Beverages &amp; Tobacco &gt; Food Items &gt; Cooking &amp; Baking Ingredients &gt; Cooking Oils</g:google_product_category>
+  <g:product_type>Aceites comestibles &gt; Aceite de girasol alto oleico</g:product_type>
+  <g:unit_pricing_measure>20 l</g:unit_pricing_measure>
+  <g:unit_pricing_base_measure>1 l</g:unit_pricing_base_measure>
+  <g:shipping_weight>19 kg</g:shipping_weight>
+  <g:shipping>
+    <g:country>MX</g:country>
+    <g:region>CMX</g:region>
+    <g:price>500.00 MXN</g:price>
+    <g:min_handling_time>0</g:min_handling_time><g:max_handling_time>0</g:max_handling_time>
+    <g:min_transit_time>0</g:min_transit_time><g:max_transit_time>0</g:max_transit_time>
+  </g:shipping>
+  <g:shipping>
+    <g:country>MX</g:country>
+    <g:price>500.00 MXN</g:price>
+    <g:min_transit_time>1</g:min_transit_time><g:max_transit_time>1</g:max_transit_time>
+  </g:shipping>
+</item>
+</channel>
+</rss>

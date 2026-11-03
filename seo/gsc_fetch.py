@@ -64,7 +64,7 @@ def query(service, site, start, end, dimensions, row_limit=5000):
         resp = service.searchanalytics().query(siteUrl=site, body=body).execute()
         batch = resp.get("rows", [])
         for r in batch:
-            row = dict(zip(dimensions, r["keys"]))
+            row = dict(zip(dimensions, r.get("keys", [])))
             row.update({k: r[k] for k in ("clicks", "impressions", "ctr", "position")})
             rows.append(row)
         if len(batch) < row_limit:

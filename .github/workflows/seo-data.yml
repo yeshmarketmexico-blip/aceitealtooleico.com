@@ -1,0 +1,79 @@
+name: SEO · datos de Search Console
+
+# Descarga semanalmente los datos de Google Search Console y los guarda en la
+# rama `seo-data` (no en `main`, para que no se publiquen en el sitio ni
+# disparen un deploy). El agente SEO lee esa rama para analizar y proponer
+# cambios vía pull request.
+
+on:
+  schedule:
+    - cron: "17 12 * * 1"   # lunes 06:17 (hora de Ciudad de México)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install --quiet google-api-python-client google-auth
+
+      - name: Escribir llave de la cuenta de servicio
+        env:
+          GSC_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ -z "$GSC_JSON" ]; then
+            echo "::error::Falta el secreto GSC_SERVICE_ACCOUNT_JSON (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          printf '%s' "$GSC_JSON" > "$RUNNER_TEMP/gsc.json"
+
+      - name: Descargar datos (28 y 90 días)
+        run: |
+          python seo/gsc_fetch.py --key "$RUNNER_TEMP/gsc.json" --days 28 --out "$RUNNER_TEMP/data"
+          python seo/gsc_fetch.py --key "$RUNNER_TEMP/gsc.json" --days 90 --out "$RUNNER_TEMP/data"
+          rm -f "$RUNNER_TEMP/gsc.json"
+
+      - name: Guardar en la rama seo-data
+        run: |
+          set -e
+          git config user.name "seo-bot"
+          git config user.email "seo-bot@users.noreply.github.com"
+          WT="$RUNNER_TEMP/seo-data"
+          if git ls-remote --exit-code --heads origin seo-data >/dev/null 2>&1; then
+            git fetch origin seo-data
+            git worktree add "$WT" -B seo-data origin/seo-data
+          else
+            git worktree add --detach "$WT"
+            git -C "$WT" checkout --orphan seo-data
+            git -C "$WT" rm -rfq . || true
+          fi
+          mkdir -p "$WT/data"
+          cp -r "$RUNNER_TEMP/data/." "$WT/data/"
+          cat > "$WT/README.md" <<'EOF'
+          # seo-data
+
+          Rama generada automáticamente por el workflow `SEO · datos de Search Console`.
+          Contiene exportaciones de Google Search Console en `data/<ventana>/<fechas>/`
+          y la copia más reciente en `data/<ventana>/latest/`. No editar a mano.
+          EOF
+          cd "$WT"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "Datos de Search Console $(date -u +%Y-%m-%d) [Skip CI]"
+            git push origin seo-data
+          fi

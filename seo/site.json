@@ -5,6 +5,13 @@
   "gsc_property": "sc-domain:aceitealtooleico.com",
   "hosting": "cloudflare-pages",
   "deploy_dir": "/",
+  "tracking": {
+    "gtm": "GTM-TG3WTXMM",
+    "ga4_measurement_id": "G-JZ365PV8VY",
+    "ga4_property_id": "562300219",
+    "ga4_stream_id": "16266367164",
+    "clarity": "z82kbkvrto"
+  },
   "market": {"country": "Mexico", "language": "Spanish"},
   "business": "YESH MARKET (distribuidor mayorista, CDMX)",
   "product": "Aceite de girasol alto oleico en bidón de 20 L al mayoreo",

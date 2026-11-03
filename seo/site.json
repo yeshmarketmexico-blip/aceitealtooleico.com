@@ -1,0 +1,29 @@
+{
+  "name": "Aceite Alto Oleico",
+  "domain": "aceitealtooleico.com",
+  "canonical": "https://aceitealtooleico.com/",
+  "gsc_property": "sc-domain:aceitealtooleico.com",
+  "hosting": "cloudflare-pages",
+  "deploy_dir": "/",
+  "tracking": {
+    "gtm": "GTM-TG3WTXMM",
+    "ga4_measurement_id": "G-JZ365PV8VY",
+    "ga4_property_id": "562300219",
+    "ga4_stream_id": "16266367164",
+    "clarity": "z82kbkvrto"
+  },
+  "market": {"country": "Mexico", "language": "Spanish"},
+  "business": "YESH MARKET (distribuidor mayorista, CDMX)",
+  "product": "Aceite de girasol alto oleico en bidón de 20 L al mayoreo",
+  "audience": ["restaurantes", "hoteles", "comedores industriales", "cocinas industriales", "food service", "distribuidores"],
+  "primary_keywords": [
+    "aceite alto oleico",
+    "aceite de girasol alto oleico",
+    "aceite alto oleico 20 litros",
+    "aceite alto oleico mayoreo",
+    "aceite para freidora industrial",
+    "aceite alto oleico precio"
+  ],
+  "conversion": "contacto por WhatsApp y llamada; precio publicado en la página",
+  "competitors_hint": ["distribuidores de aceite comestible al mayoreo en México", "marcas de aceite alto oleico"]
+}

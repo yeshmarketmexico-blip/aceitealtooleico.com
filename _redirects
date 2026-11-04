@@ -3,3 +3,5 @@
 /seo/*  /  301
 /.claude/*  /  301
 /.github/*  /  301
+/assets/css/*  /  301
+/assets/js/*  /  301

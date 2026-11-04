@@ -2,6 +2,8 @@
 
 > Aceite comestible puro de girasol alto oleico en bidón de 20 L, vendido al mayoreo en México por YESH MARKET (distribuidor, no fabricante). Precio publicado: $1,699 MXN por bidón (IVA tasa 0 %). Entrega el mismo día en CDMX para pedidos antes de las 3:00 p. m. y al día siguiente en el resto del país. Para restaurantes, hoteles, comedores industriales, cocinas industriales y food service.
 
+Última actualización: 4 de noviembre de 2026
+
 Datos clave:
 - Producto: aceite comestible puro de girasol alto oleico (Helianthus annuus), refinación completa
 - Presentación: bidón de polietileno de 20 L; tarima estándar de 48 bidones (960 L)
@@ -26,7 +28,7 @@ Aceite de girasol obtenido de variedades de semilla seleccionadas por su alto co
 
 ## Uso en freído
 
-Al tener poco ácido linoleico (2–20 %), es menos propenso a oxidarse que el girasol convencional. La duración real en freidora depende de la temperatura, los alimentos, el filtrado y la reposición. La especificación no declara punto de humo.
+Al tener poco ácido linoleico (2–20 %), es menos propenso a oxidarse que el girasol convencional. La duración real en freidora depende de la temperatura, los alimentos, el filtrado y la reposición. La especificación no declara punto de humo. También se usa en mayonesa, aderezos y salteados por su sabor neutro.
 
 ## Especificaciones
 
@@ -69,8 +71,8 @@ El aceite de un bidón de 20 L pesa alrededor de 18.2 a 18.3 kg. Lo calculamos c
 ### ¿Cuántos bidones de 20 L trae una tarima?
 La configuración estándar es de 48 bidones por tarima: 960 litros, alrededor de 877 kg de aceite sin contar envases ni tarima.
 
-### ¿Es adecuado para freír?
-Sí. La especificación del producto lo indica para freído. Al tener poco ácido linoleico (2 a 20 %), es menos propenso a oxidarse que el girasol convencional, que suele tener entre 45 y 74 %. La vida útil real en freidora depende de la temperatura, el tipo de alimento, el filtrado y la reposición de aceite.
+### ¿Sirve para freidora industrial y de restaurante?
+Sí. La especificación del producto lo indica para freído, incluidas las freidoras industriales de inmersión y las freidoras de restaurante. Al tener poco ácido linoleico (2 a 20 %), es menos propenso a oxidarse que el girasol convencional, que suele tener entre 45 y 74 %. La vida útil real en freidora depende de la temperatura, el tipo de alimento, el filtrado y la reposición de aceite.
 
 ### ¿Cuál es el punto de humo del aceite de girasol alto oleico?
 La especificación de este producto no declara un punto de humo, así que no publicamos una cifra. Para decidir cuándo cambiar el aceite de una freidora, el indicador más usado en cocinas profesionales es el porcentaje de compuestos polares totales, que se mide con un medidor portátil.
@@ -113,6 +115,9 @@ Sí. Para comedores industriales, hospitales, universidades y otras institucione
 
 ### ¿Quién vende Aceite Girasol Alto Oleico México? ¿Fabrican el aceite?
 Aceite Girasol Alto Oleico México es el nombre comercial con el que YESH MARKET, distribuidor B2B en la Ciudad de México, vende y factura este aceite. El aceite no lo producimos nosotros: lo adquirimos de su productor y lo vendemos al mayoreo, con precio publicado, entrega rápida y atención por WhatsApp.
+
+### ¿Aceptan devoluciones?
+No. Por tratarse de un producto alimenticio, no aceptamos devoluciones.
 
 ### ¿Cómo hago un pedido?
 Escríbenos por WhatsApp al 55 2589 7917 o llena el formulario de esta página con el número de bidones y la colonia o ciudad de entrega. Te enviamos el total con flete y la hora de entrega.

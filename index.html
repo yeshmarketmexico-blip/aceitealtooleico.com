@@ -15,7 +15,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" href="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.avif" as="image" type="image/avif" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.avif 1x, assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina-2x.avif 2x" fetchpriority="high">
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,7 +40,7 @@
   --sun-hover:#ffc933;
   --gold-ink:#855700;   /* dorado legible sobre claro */
   --oil:#e8a915;
-  --wa:#1fa855;
+  --wa:#0f7a3f;
   --focus:#2b6cff;
   --display:"Barlow Condensed","Arial Narrow","Roboto Condensed",Arial,sans-serif;
   --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
@@ -76,6 +76,8 @@ p{margin:0}
 .btn-primary:hover{background:var(--sun-hover);color:var(--ink)}
 .btn-wa{background:transparent;color:var(--on-dark);border-color:#5d7f58}
 .btn-wa:hover{background:#1c3a24;color:#fff}
+.btn-outline{background:transparent;color:var(--on-dark);border-color:rgba(246,241,230,.45)}
+.btn-outline:hover{background:rgba(246,241,230,.08);color:#fff}
 .on-light .btn-wa{color:#145c2f;border-color:#8fbf99}
 .on-light .btn-wa:hover{background:#e7f4ea;color:#0f4724}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
@@ -92,6 +94,8 @@ p{margin:0}
 .nav a:not(.btn):hover{color:var(--sun)}
 .nav .btn{min-height:44px;padding:.55em 1em;font-size:.95rem}
 @media (max-width:900px){.nav ul{display:none}}
+.nav .nav-wa{display:none}
+@media (max-width:900px){.nav .nav-pedir{display:none}.nav .nav-wa{display:inline-flex}}
 
 /* Hero */
 .hero{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
@@ -245,7 +249,7 @@ figcaption{font-size:.88rem;color:var(--muted);margin-top:8px}
 /* WhatsApp flotante */
 .wa-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 18px 12px 14px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
 .wa-float svg{width:28px;height:28px}
-.wa-float:hover{background:#178a45;color:#fff}
+.wa-float:hover{background:#0c6533;color:#fff}
 @media (max-width:560px){.wa-float span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.wa-float{padding:14px}}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
@@ -337,7 +341,8 @@ blockquote.card footer{font-weight:600;color:var(--text)}
                 <li><a href="#ficha-tecnica">Ficha técnica</a></li>
         <li><a href="#preguntas-frecuentes">Preguntas</a></li>
       </ul>
-      <a class="btn btn-primary" href="#cotizar" data-track="cta_cotizar" data-loc="header">Pedir</a>
+      <a class="btn btn-primary nav-pedir" href="#cotizar" data-track="cta_cotizar" data-loc="header">Pedir</a>
+      <a class="btn btn-primary nav-wa" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20aceite%20de%20girasol%20alto%20oleico" target="_blank" rel="noopener" data-track="click_whatsapp" data-loc="header">Pedir</a>
     </nav>
   </div>
 </header>
@@ -357,15 +362,15 @@ blockquote.card footer{font-weight:600;color:var(--text)}
         </div>
         <div class="ctas">
           <a class="btn btn-primary" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20aceite%20de%20girasol%20alto%20oleico" target="_blank" rel="noopener" data-track="click_whatsapp" data-loc="hero"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.3 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.4z"/></svg>Pedir por WhatsApp</a>
-          <a class="btn btn-wa" href="#cotizar" data-track="cta_cotizar" data-loc="hero">Hacer pedido</a>
+          <a class="btn btn-outline" href="#cotizar" data-track="cta_cotizar" data-loc="hero">Hacer pedido</a>
         </div>
         <p class="note">Pago por SPEI, tarjeta, depósito en efectivo o efectivo al recibir en CDMX.</p>
       </div>
       <figure class="hero-fig">
         <picture>
-          <source srcset="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.avif" type="image/avif">
-          <source srcset="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.webp" type="image/webp">
-          <img class="photo" src="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.jpg" width="532" height="443" fetchpriority="high" decoding="async" alt="Bidón de 20 litros de aceite de girasol alto oleico YESH MARKET sobre barra de acero inoxidable en cocina profesional, junto a girasoles">
+          <source srcset="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.avif 1x, assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina-2x.avif 2x" type="image/avif">
+          <source srcset="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.webp 1x, assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina-2x.webp 2x" type="image/webp">
+          <img class="photo" src="assets/img/bidon-20-litros-aceite-girasol-alto-oleico-cocina.jpg" width="532" height="443" fetchpriority="high" decoding="async" alt="Bidón de 20 litros de aceite de girasol alto oleico YESH MARKET sobre mesa de acero inoxidable en cocina profesional, con un tazón de aceite, semillas y un girasol">
         </picture>
       </figure>
     </div>

@@ -32,5 +32,6 @@ a.btn{display:inline-flex;align-items:center;min-height:48px;padding:.75em 1.3em
     <a class="btn wa" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20aceite%20de%20girasol%20alto%20oleico" target="_blank" rel="noopener" data-track="click_whatsapp" data-loc="404">WhatsApp 55 2589 7917</a>
   </div>
 </main>
+<script>document.addEventListener("click",function(e){var a=e.target.closest("[data-track]");if(!a)return;(window.dataLayer=window.dataLayer||[]).push({event:a.getAttribute("data-track"),cta_location:a.getAttribute("data-loc")||""});});</script>
 </body>
 </html>

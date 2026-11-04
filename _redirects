@@ -1,0 +1,7 @@
+# Archivos internos del repo que no deben servirse en el dominio
+/CLAUDE.md  /  301
+/seo/*  /  301
+/.claude/*  /  301
+/.github/*  /  301
+/assets/css/*  /  301
+/assets/js/*  /  301

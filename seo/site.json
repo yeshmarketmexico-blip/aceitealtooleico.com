@@ -12,18 +12,34 @@
     "ga4_stream_id": "16266367164",
     "clarity": "z82kbkvrto"
   },
-  "market": {"country": "Mexico", "language": "Spanish"},
+  "market": {
+    "country": "Mexico",
+    "language": "Spanish"
+  },
   "business": "YESH MARKET (distribuidor mayorista, CDMX)",
   "product": "Aceite de girasol alto oleico en bidón de 20 L al mayoreo",
-  "audience": ["restaurantes", "hoteles", "comedores industriales", "cocinas industriales", "food service", "distribuidores"],
+  "audience": [
+    "restaurantes",
+    "hoteles",
+    "comedores industriales",
+    "cocinas industriales",
+    "food service",
+    "distribuidores"
+  ],
   "primary_keywords": [
-    "aceite alto oleico",
     "aceite de girasol alto oleico",
-    "aceite alto oleico 20 litros",
-    "aceite alto oleico mayoreo",
+    "aceite girasol alto oleico 20 litros",
+    "aceite de girasol alto oleico precio",
+    "aceite girasol 20 litros precio",
     "aceite para freidora industrial",
-    "aceite alto oleico precio"
+    "aceite de girasol alto oleico donde comprar",
+    "bidón de aceite 20 litros",
+    "aceite alto oleico"
   ],
   "conversion": "contacto por WhatsApp y llamada; precio publicado en la página",
-  "competitors_hint": ["distribuidores de aceite comestible al mayoreo en México", "marcas de aceite alto oleico"]
+  "competitors_hint": [
+    "distribuidores de aceite comestible al mayoreo en México",
+    "marcas de aceite alto oleico"
+  ],
+  "keywords_source": "Search Console 28d (hasta 2026-11-01) + autocompletado de Google México (2026-11-04)"
 }

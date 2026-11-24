@@ -1,20 +1,20 @@
 {
   "site": "sc-domain:aceitealtooleico.com",
-  "start": "2026-08-16",
-  "end": "2026-11-13",
+  "start": "2026-08-24",
+  "end": "2026-11-21",
   "days": 90,
   "rows": {
-    "queries": 14,
+    "queries": 19,
     "pages": 2,
-    "query_page": 14,
+    "query_page": 19,
     "devices": 3,
-    "countries": 10,
-    "daily": 39
+    "countries": 13,
+    "daily": 47
   },
   "totals": {
-    "clicks": 8,
-    "impressions": 249,
-    "ctr": 0.0321285140562249,
-    "position": 7.497991967871486
+    "clicks": 9,
+    "impressions": 308,
+    "ctr": 0.02922077922077922,
+    "position": 7.587662337662338
   }
 }
